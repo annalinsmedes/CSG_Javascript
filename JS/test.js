@@ -5,10 +5,19 @@ function setup() {
   //noLoop();
 }
 
+function tekenkerk(hoogte) {
+noStroke();
+fill('black');
+rect(0,350,75,hoogte);
+fill('brown');
+triangle(0,350,75,350,37,310);
+}
+
 function draw() {
   noStroke();
-  fill('steelblue');
-  ellipse(0,0,800);
-  fill('deepskyblue');
-  ellipse(450,450,400);
+  tekenkerk(300);
+  translate(200,-100);
+  tekenkerk(300);
+  translate(100,-100);
+  tekenkerk(300);
 }

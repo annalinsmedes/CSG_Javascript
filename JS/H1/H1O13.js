@@ -17,11 +17,12 @@ function draw() {
   xJOS = constrain(mouseX,75,375);
   yJOS = constrain(mouseY,75,375);
   
-  scale(1);
-  translate(xJOS,225);
+  translate(xJOS,yJOS);
+
   // in de volgende regels wordt JOS getekend
 
   push();
+  scale(0.5);  
   noStroke();
   fill('indianred');
   ellipse(0,0,150);
